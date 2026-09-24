@@ -1,0 +1,17 @@
+{
+  "name": "xcqt",
+  "module": "src/index.ts",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^7"
+  },
+  "scripts": {
+    "dev:queuer": "bun run --bun ./src/queuer.ts",
+    "dev:downloader": "bun run --bun ./src/downloader.ts",
+    "build": "bun run ./scripts/build.ts"
+  }
+}
